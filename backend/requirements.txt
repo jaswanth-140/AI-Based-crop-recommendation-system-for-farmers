@@ -1,0 +1,53 @@
+# Core Dependencies
+Flask==2.3.0
+flask-cors==4.0.0
+flask-limiter==2.8.2
+requests==2.31.0
+python-dotenv==1.0.0
+
+# Machine Learning & Data Science
+scikit-learn==1.3.0
+joblib==1.3.1
+numpy==1.24.3
+pandas==2.0.3
+scipy==1.11.3
+
+# Chatbot & AI Dependencies
+google-cloud-speech==2.21.0
+google-cloud-texttospeech==2.14.1
+groq>=0.4.0
+langdetect==1.0.9
+protobuf==4.25.1
+
+# Geospatial & Location
+geopy==2.3.0
+
+# Database & Caching
+redis==5.0.1
+sqlalchemy==2.0.20
+
+# Security & Authentication
+bcrypt==4.0.1
+python-jose==3.3.0
+
+# Utilities & Helpers
+python-multipart==0.0.6
+urllib3==2.0.6
+certifi==2023.7.22
+
+# Development & Testing
+pytest==7.4.2
+pytest-cov==4.1.0
+black==23.9.1
+flake8==6.1.0
+
+# Production
+gunicorn==21.2.0
+whitenoise==6.6.0
+
+# Optional (for enhanced features)
+sentry-sdk==1.34.0
+prometheus-flask-exporter==0.22.4
+
+# Windows specific (if needed)
+pywin32==306
