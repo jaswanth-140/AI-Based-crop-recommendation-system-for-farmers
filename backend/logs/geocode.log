@@ -1,0 +1,71 @@
+2025-10-16 22:20:33,713 - utils - WARNING - Model file not found. Creating default model.
+2025-10-16 22:20:33,713 - utils - INFO - Creating default Random Forest model
+2025-10-16 22:20:33,868 - utils - INFO - Default model saved to models/crop_recommendation_model.pkl
+2025-10-16 22:20:33,940 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.23.30.8:5000
+2025-10-16 22:20:33,941 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 22:20:33,943 - werkzeug - INFO -  * Restarting with stat
+2025-10-16 22:20:35,300 - utils - INFO - Model loaded from models/crop_recommendation_model.pkl
+2025-10-16 22:20:35,339 - werkzeug - WARNING -  * Debugger is active!
+2025-10-16 22:20:35,343 - werkzeug - INFO -  * Debugger PIN: 470-980-286
+2025-10-16 22:20:57,443 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 22:20:57] "GET / HTTP/1.1" 200 -
+2025-10-16 22:21:56,368 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 22:21:56] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-10-16 22:21:56,371 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 22:21:56] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-10-16 22:21:56,632 - utils - INFO - API Call: crop_prediction | Params: {'lat': 17.37761000767343, 'lon': 78.57413975753893} | Status: 200
+2025-10-16 22:21:56,679 - utils - INFO - API Call: crop_prediction | Params: {'lat': 17.37761000767343, 'lon': 78.57413975753893} | Status: 200
+2025-10-16 22:21:58,140 - utils - ERROR - Error: API request failed: https://bhuvan-app1.nrsc.gov.in/api/geocoding/reverse | Exception: 404 Client Error: Not Found for url: https://bhuvan-app1.nrsc.gov.in/api/geocoding/reverse?lat=17.37761000767343&lon=78.57413975753893&key=841161352a10474f450a93489cee0d62caceaa25
+2025-10-16 22:21:58,140 - utils - ERROR - Error: API request failed: https://bhuvan-app1.nrsc.gov.in/api/geocoding/reverse | Exception: 404 Client Error: Not Found for url: https://bhuvan-app1.nrsc.gov.in/api/geocoding/reverse?lat=17.37761000767343&lon=78.57413975753893&key=841161352a10474f450a93489cee0d62caceaa25
+2025-10-16 22:21:58,144 - utils - ERROR - Error: Failed to reverse geocode: 17.37761000767343, 78.57413975753893
+2025-10-16 22:21:58,145 - utils - ERROR - Error: Failed to reverse geocode: 17.37761000767343, 78.57413975753893
+2025-10-16 22:21:59,273 - utils - ERROR - Error: API request failed: https://bhuvan-app1.nrsc.gov.in/api/geocoding/reverse | Exception: 404 Client Error: Not Found for url: https://bhuvan-app1.nrsc.gov.in/api/geocoding/reverse?lat=17.37761000767343&lon=78.57413975753893&key=841161352a10474f450a93489cee0d62caceaa25
+2025-10-16 22:21:59,276 - utils - ERROR - Error: Failed to reverse geocode: 17.37761000767343, 78.57413975753893
+2025-10-16 22:21:59,322 - utils - ERROR - Error: API request failed: https://bhuvan-app1.nrsc.gov.in/api/geocoding/reverse | Exception: 404 Client Error: Not Found for url: https://bhuvan-app1.nrsc.gov.in/api/geocoding/reverse?lat=17.37761000767343&lon=78.57413975753893&key=841161352a10474f450a93489cee0d62caceaa25
+2025-10-16 22:21:59,326 - utils - ERROR - Error: Failed to reverse geocode: 17.37761000767343, 78.57413975753893
+2025-10-16 22:22:00,342 - utils - ERROR - Error: API request failed: https://bhuvan-app1.nrsc.gov.in/api/geocoding/reverse | Exception: 404 Client Error: Not Found for url: https://bhuvan-app1.nrsc.gov.in/api/geocoding/reverse?lat=17.37761000767343&lon=78.57413975753893&key=841161352a10474f450a93489cee0d62caceaa25
+2025-10-16 22:22:00,344 - utils - ERROR - Error: Failed to reverse geocode: 17.37761000767343, 78.57413975753893
+2025-10-16 22:22:00,358 - utils - ERROR - Error: API request failed: https://bhuvan-app1.nrsc.gov.in/api/geocoding/reverse | Exception: 404 Client Error: Not Found for url: https://bhuvan-app1.nrsc.gov.in/api/geocoding/reverse?lat=17.37761000767343&lon=78.57413975753893&key=841161352a10474f450a93489cee0d62caceaa25
+2025-10-16 22:22:00,360 - utils - ERROR - Error: Failed to reverse geocode: 17.37761000767343, 78.57413975753893
+2025-10-16 22:22:01,487 - utils - ERROR - Error: API request failed: https://bhuvan-app1.nrsc.gov.in/api/thematic/lulcStatistics | Exception: 404 Client Error: Not Found for url: https://bhuvan-app1.nrsc.gov.in/api/thematic/lulcStatistics?district=Unknown&key=9d7052346513404b8f4c4dee78f5ed3204c5846b&state=Unknown
+2025-10-16 22:22:01,491 - utils - ERROR - Error: Failed to get LULC statistics for: Unknown
+2025-10-16 22:22:01,500 - utils - ERROR - Error: API request failed: https://bhuvan-app1.nrsc.gov.in/api/thematic/lulcStatistics | Exception: 404 Client Error: Not Found for url: https://bhuvan-app1.nrsc.gov.in/api/thematic/lulcStatistics?district=Unknown&key=9d7052346513404b8f4c4dee78f5ed3204c5846b&state=Unknown
+2025-10-16 22:22:01,504 - utils - ERROR - Error: Failed to get LULC statistics for: Unknown
+2025-10-16 22:22:02,599 - utils - ERROR - Error: API request failed: https://bhuvan-app1.nrsc.gov.in/api/thematic/lulcStatistics | Exception: 404 Client Error: Not Found for url: https://bhuvan-app1.nrsc.gov.in/api/thematic/lulcStatistics?district=Unknown&key=9d7052346513404b8f4c4dee78f5ed3204c5846b&state=Unknown
+2025-10-16 22:22:02,602 - utils - ERROR - Error: Failed to get LULC statistics for: Unknown
+2025-10-16 22:22:02,607 - utils - ERROR - Error: API request failed: https://bhuvan-app1.nrsc.gov.in/api/thematic/lulcStatistics | Exception: 404 Client Error: Not Found for url: https://bhuvan-app1.nrsc.gov.in/api/thematic/lulcStatistics?district=Unknown&key=9d7052346513404b8f4c4dee78f5ed3204c5846b&state=Unknown
+2025-10-16 22:22:02,609 - utils - ERROR - Error: Failed to get LULC statistics for: Unknown
+2025-10-16 22:22:03,692 - utils - ERROR - Error: API request failed: https://bhuvan-app1.nrsc.gov.in/api/thematic/lulcStatistics | Exception: 404 Client Error: Not Found for url: https://bhuvan-app1.nrsc.gov.in/api/thematic/lulcStatistics?district=Unknown&key=9d7052346513404b8f4c4dee78f5ed3204c5846b&state=Unknown
+2025-10-16 22:22:03,694 - utils - ERROR - Error: Failed to get LULC statistics for: Unknown
+2025-10-16 22:22:03,698 - utils - ERROR - Error: API request failed: https://bhuvan-app1.nrsc.gov.in/api/thematic/lulcStatistics | Exception: 404 Client Error: Not Found for url: https://bhuvan-app1.nrsc.gov.in/api/thematic/lulcStatistics?district=Unknown&key=9d7052346513404b8f4c4dee78f5ed3204c5846b&state=Unknown
+2025-10-16 22:22:03,700 - utils - ERROR - Error: Failed to get LULC statistics for: Unknown
+2025-10-16 22:22:06,121 - utils - INFO - API Call: soilgrids | Params: {'lon': 78.57413975753893, 'lat': 17.37761000767343, 'property': 'phh2o', 'depth': '0-5cm'} | Status: 200
+2025-10-16 22:22:06,153 - utils - INFO - API Call: soilgrids | Params: {'lon': 78.57413975753893, 'lat': 17.37761000767343, 'property': 'phh2o', 'depth': '0-5cm'} | Status: 200
+2025-10-16 22:22:11,110 - utils - INFO - API Call: soilgrids | Params: {'lon': 78.57413975753893, 'lat': 17.37761000767343, 'property': 'nitrogen', 'depth': '0-5cm'} | Status: 200
+2025-10-16 22:22:11,111 - utils - INFO - API Call: soilgrids | Params: {'lon': 78.57413975753893, 'lat': 17.37761000767343, 'property': 'nitrogen', 'depth': '0-5cm'} | Status: 200
+2025-10-16 22:22:12,870 - utils - INFO - API Call: soilgrids | Params: {'lon': 78.57413975753893, 'lat': 17.37761000767343, 'property': 'soc', 'depth': '0-5cm'} | Status: 200
+2025-10-16 22:22:12,954 - utils - INFO - API Call: soilgrids | Params: {'lon': 78.57413975753893, 'lat': 17.37761000767343, 'property': 'soc', 'depth': '0-5cm'} | Status: 200
+2025-10-16 22:22:14,532 - utils - INFO - API Call: soilgrids | Params: {'lon': 78.57413975753893, 'lat': 17.37761000767343, 'property': 'sand', 'depth': '0-5cm'} | Status: 200
+2025-10-16 22:22:14,732 - utils - INFO - API Call: soilgrids | Params: {'lon': 78.57413975753893, 'lat': 17.37761000767343, 'property': 'sand', 'depth': '0-5cm'} | Status: 200
+2025-10-16 22:22:16,491 - utils - INFO - API Call: soilgrids | Params: {'lon': 78.57413975753893, 'lat': 17.37761000767343, 'property': 'clay', 'depth': '0-5cm'} | Status: 200
+2025-10-16 22:22:16,605 - utils - INFO - API Call: soilgrids | Params: {'lon': 78.57413975753893, 'lat': 17.37761000767343, 'property': 'clay', 'depth': '0-5cm'} | Status: 200
+2025-10-16 22:22:18,227 - utils - INFO - API Call: soilgrids | Params: {'lon': 78.57413975753893, 'lat': 17.37761000767343, 'property': 'silt', 'depth': '0-5cm'} | Status: 200
+2025-10-16 22:22:18,230 - utils - INFO - API Call: soilgrids | Params: {'lon': 78.57413975753893, 'lat': 17.37761000767343, 'property': 'silt', 'depth': '0-5cm'} | Status: 200
+2025-10-16 22:22:19,331 - utils - ERROR - Error: API request failed: https://api.openweathermap.org/data/2.5/weather | Exception: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?lat=17.37761000767343&lon=78.57413975753893&appid=https%3A%2F%2Fapi.openweathermap.org%2Fdata%2F2.5%2Fweather%3Flat%3D%7Blat%7D%26lon%3D%7Blon%7D%26appid%3D%7BAPI+key%7D&units=metric
+2025-10-16 22:22:19,334 - utils - ERROR - Error: Failed to get weather for: 17.37761000767343, 78.57413975753893
+2025-10-16 22:22:19,369 - utils - ERROR - Error: API request failed: https://api.openweathermap.org/data/2.5/weather | Exception: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?lat=17.37761000767343&lon=78.57413975753893&appid=https%3A%2F%2Fapi.openweathermap.org%2Fdata%2F2.5%2Fweather%3Flat%3D%7Blat%7D%26lon%3D%7Blon%7D%26appid%3D%7BAPI+key%7D&units=metric
+2025-10-16 22:22:19,381 - utils - ERROR - Error: Failed to get weather for: 17.37761000767343, 78.57413975753893
+2025-10-16 22:22:20,431 - utils - ERROR - Error: API request failed: https://api.openweathermap.org/data/2.5/weather | Exception: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?lat=17.37761000767343&lon=78.57413975753893&appid=https%3A%2F%2Fapi.openweathermap.org%2Fdata%2F2.5%2Fweather%3Flat%3D%7Blat%7D%26lon%3D%7Blon%7D%26appid%3D%7BAPI+key%7D&units=metric
+2025-10-16 22:22:20,434 - utils - ERROR - Error: Failed to get weather for: 17.37761000767343, 78.57413975753893
+2025-10-16 22:22:20,437 - utils - ERROR - Error: API request failed: https://api.openweathermap.org/data/2.5/weather | Exception: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?lat=17.37761000767343&lon=78.57413975753893&appid=https%3A%2F%2Fapi.openweathermap.org%2Fdata%2F2.5%2Fweather%3Flat%3D%7Blat%7D%26lon%3D%7Blon%7D%26appid%3D%7BAPI+key%7D&units=metric
+2025-10-16 22:22:20,440 - utils - ERROR - Error: Failed to get weather for: 17.37761000767343, 78.57413975753893
+2025-10-16 22:22:21,456 - utils - ERROR - Error: API request failed: https://api.openweathermap.org/data/2.5/weather | Exception: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?lat=17.37761000767343&lon=78.57413975753893&appid=https%3A%2F%2Fapi.openweathermap.org%2Fdata%2F2.5%2Fweather%3Flat%3D%7Blat%7D%26lon%3D%7Blon%7D%26appid%3D%7BAPI+key%7D&units=metric
+2025-10-16 22:22:21,458 - utils - ERROR - Error: Failed to get weather for: 17.37761000767343, 78.57413975753893
+2025-10-16 22:22:21,489 - utils - ERROR - Error: API request failed: https://api.openweathermap.org/data/2.5/weather | Exception: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?lat=17.37761000767343&lon=78.57413975753893&appid=https%3A%2F%2Fapi.openweathermap.org%2Fdata%2F2.5%2Fweather%3Flat%3D%7Blat%7D%26lon%3D%7Blon%7D%26appid%3D%7BAPI+key%7D&units=metric
+2025-10-16 22:22:21,493 - utils - ERROR - Error: Failed to get weather for: 17.37761000767343, 78.57413975753893
+2025-10-16 22:22:21,502 - utils - ERROR - Error: Error in crop prediction | Exception: Input X contains NaN.
+RandomForestClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-10-16 22:22:21,503 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 22:22:21] "POST /api/predict HTTP/1.1" 200 -
+2025-10-16 22:22:21,504 - utils - ERROR - Error: Error in crop prediction | Exception: Input X contains NaN.
+RandomForestClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-10-16 22:22:21,505 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 22:22:21] "POST /api/predict HTTP/1.1" 200 -
