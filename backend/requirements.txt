@@ -1,7 +1,7 @@
 # Core Dependencies
 Flask==2.3.0
 flask-cors==4.0.0
-flask-limiter==2.8.2
+flask-limiter==3.5.0
 requests==2.31.0
 python-dotenv==1.0.0
 
@@ -48,6 +48,3 @@ whitenoise==6.6.0
 # Optional (for enhanced features)
 sentry-sdk==1.34.0
 prometheus-flask-exporter==0.22.4
-
-# Windows specific (if needed)
-pywin32==306
