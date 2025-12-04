@@ -44,7 +44,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts --max_old_space_size=512 build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts --max_old_space_size=512 build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build-pwa": "npm run build && npx workbox injectManifest workbox-config.js"
