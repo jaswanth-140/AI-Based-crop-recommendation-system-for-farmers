@@ -17,7 +17,14 @@ load_dotenv()
 
 app = Flask(__name__)
 # Enable CORS for all origins (required for mobile device access)
-CORS(app, resources={r"/*": {"origins": "*", "allow_headers": "*", "expose_headers": "*"}})
+ALLOWED_ORIGINS = [
+    'http://localhost:3000',  # For local development
+    'https://agritech-backend-0vo8.onrender.com',  # Your backend
+    'https://ai-based-crop-recommendation-system-sand.vercel.app',  # Add your Vercel URL here!
+    'https://*.vercel.app'  # Allow all Vercel preview deployments
+]
+
+CORS(app, origins=ALLOWED_ORIGINS, supports_credentials=True)
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
