@@ -5,7 +5,6 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.11-blue.svg)
 ![React](https://img.shields.io/badge/react-18.2-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 **An intelligent agricultural platform that provides AI-powered crop recommendations, real-time market prices, and multilingual chatbot assistance for farmers in India**
 
@@ -853,5 +852,6 @@ If you find this project helpful, please consider giving it a ⭐ on GitHub!
 [⬆ Back to Top](#-ai-crop-recommendation-system-epics)
 
 </div>
+
 
 
